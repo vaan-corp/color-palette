@@ -26,13 +26,16 @@ struct HomeView: View {
           .frame(width: 500)
       }
         .padding()
-      switch themeName {
-      case "sky": PaletteGridView(theme: SkyTheme())
-      case "sunset": PaletteGridView(theme: SunsetTheme())
-      default: PaletteGridView(theme: DefaultTheme())
+      Group {
+        switch themeName {
+        case "sky": PaletteGridView(theme: SkyTheme())
+        case "sunset": PaletteGridView(theme: SunsetTheme())
+        default: PaletteGridView(theme: DefaultTheme())
+        }
       }
+        .padding()
     }
-      .frame(width: 1500, height: 1500)
+      .frame(width: 1200, height: 1800)
   }
 }
 
