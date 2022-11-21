@@ -17,6 +17,7 @@ struct Dropdown:View {
       Text("Sunset")
     }
   label: {
-  }.frame(width:242.0, height: 32.0)
+  }
+//  .frame(width:242.0, height: 32.0)
   }
 }

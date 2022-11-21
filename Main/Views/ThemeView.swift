@@ -13,6 +13,7 @@ struct ThemeView: View {
   var body: some View {
     VStack{
       Text("Current Theme")
+        .frame(maxWidth: .infinity, alignment: .leading)
       Dropdown()
       SegmentedPickerView()
     }

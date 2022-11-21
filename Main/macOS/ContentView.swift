@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     ThemeView()
-      .padding().frame(width: 274, height: 608)
+      .padding().frame(width: 320, height: 700)
 //    ScrollView{
 //      HomeView()
 //    }
