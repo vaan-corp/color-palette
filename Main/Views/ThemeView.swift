@@ -9,13 +9,28 @@
 import SwiftUI
 
 struct ThemeView: View {
-  
+  func saveTheme(){
+    
+  }
   var body: some View {
-    VStack{
-      Text("Current Theme")
-        .frame(maxWidth: .infinity, alignment: .leading)
+    VStack(spacing:20){
+      
       Dropdown()
+        .frame(maxWidth: .infinity, alignment: .leading)
       SegmentedPickerView()
+      SaveThemeButtonView()
+        .frame(maxWidth: .infinity, alignment: .leading)
+//      HStack {
+//          Button("Save Theme", action: signIn)
+////          Button("Register", action: register)
+//      }
+//      .buttonStyle(.bordered)
+//      .frame(width: 242)
+//
+//      Button(action: saveTheme) {
+////              Label("Add Folder", systemImage: "folder.badge.plus")
+//        Label("Save Theme")
+//          }
     }
   }
 }
